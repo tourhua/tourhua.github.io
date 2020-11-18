@@ -8,18 +8,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://tourhua.github.io">
-  <title>数论题解.md | tourhua的博客</title>
+  <title>Django学习 | tourhua的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Two Divisors题目：如果一个数有2个因子相加与该数互质，那么输出这两个因数，如果没有，则输出-1。题解：这道题很容易想到先筛出所有的素数，如果此数是素数那么，一定不满足以上条件，直接结果记为-1即可。如果不是质数，那么通过对前几个数找找规律，能够发现，一个数的因子与该数与因子相除的">
+  <meta name="description" content="Django诞生根本原因构建一个节省开发时间的框架，将能复用的组件或模块放在一起，使开发者不必重复的工作。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数论题解.md">
-<meta property="og:url" content="https://tourhua.github.io/2020/11/18/%E6%95%B0%E8%AE%BA%E9%A2%98%E8%A7%A3/index.html">
+<meta property="og:title" content="Django学习">
+<meta property="og:url" content="https://tourhua.github.io/2020/11/18/Django%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="tourhua的博客">
-<meta property="og:description" content="Two Divisors题目：如果一个数有2个因子相加与该数互质，那么输出这两个因数，如果没有，则输出-1。题解：这道题很容易想到先筛出所有的素数，如果此数是素数那么，一定不满足以上条件，直接结果记为-1即可。如果不是质数，那么通过对前几个数找找规律，能够发现，一个数的因子与该数与因子相除的">
+<meta property="og:description" content="Django诞生根本原因构建一个节省开发时间的框架，将能复用的组件或模块放在一起，使开发者不必重复的工作。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-11-18T11:13:24.000Z">
-<meta property="article:modified_time" content="2020-11-18T11:19:04.560Z">
+<meta property="article:published_time" content="2020-11-18T14:07:27.000Z">
+<meta property="article:modified_time" content="2020-11-18T14:32:53.943Z">
 <meta property="article:author" content="tourhua">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="tourhua的博客" type="application/atom+xml">
@@ -156,14 +157,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-数论题解" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Django学习" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      数论题解.md
+      Django学习
     </h1>
   
 
@@ -175,17 +176,23 @@
 	</span>
 
 
-<a href="/2020/11/18/%E6%95%B0%E8%AE%BA%E9%A2%98%E8%A7%A3/" class="archive-article-date">
-  	<time datetime="2020-11-18T11:13:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-18</time>
+<a href="/2020/11/18/Django%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
+  	<time datetime="2020-11-18T14:07:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Two-Divisors"><a href="#Two-Divisors" class="headerlink" title="Two Divisors"></a>Two Divisors</h1><p>题目：如果一个数有2个因子相加与该数互质，那么输出这两个因数，如果没有，则输出-1。<br>题解：这道题很容易想到先筛出所有的素数，如果此数是素数那么，一定不满足以上条件，直接结果记为-1即可。如果不是质数，那么通过对前几个数找找规律，能够发现，一个数的因子与该数与因子相除的<a id="more"></a>商，两者相加，一定与此数互质。</p>
-<h1 id="Jurassic-Remains"><a href="#Jurassic-Remains" class="headerlink" title="Jurassic Remains"></a>Jurassic Remains</h1><p>题目：在给定的字符串中，选出尽可能多的字符串，使所包含的所有字母数量都为偶数。<br>题解：刚开始直接dfs暴力枚举，感觉复杂度可以，结果wa了3发，后来，看了题解，发现使用二进制，当对应位置为0时，此字母出现了偶数次，为1，表示出现了奇数次。在枚举时分别对前一半字符串和后一半字符串进行枚举，如果想要所有的位置全都是0，那么前一半字符串对应的二进制状态，应该与后一半的状态相同，这样异或结果才能全为0。前一半的所有状态可以用一个map进行存储。这样的做法的时间复杂度是O($2^{n/2}logn$)。</p>
-<h1 id="Vasya’s-Function"><a href="#Vasya’s-Function" class="headerlink" title="Vasya’s Function"></a>Vasya’s Function</h1><p>题目：求出题目所给的函数的值。<br>题解：这道题看了题解之后，才明白。当b在减少时，在一个区间内，$gcd(a,b)$会保持不变，因此可以直接加上这个区间的长度，b跳到gcd发生改变的值。不过，如何求这个区间是什么。需要把a和b进行简单的变形，$a = A<em>gcd(a,b)$和$b = B</em>gcd(a, b)$，这样每次b都会变成$(B-1)*gcd(a,b)$，如果B-1与A仍互质，那么gcd的值不会发生改变。那么，当B减多少时，gcd会变化呢？我们能够发现当$(B-S)%T == 0$时会发生变化，T是A的一个质因子，B变化的次数S，可以转化为$S=min(B%T)$。这样能够求出，B减少了S之后，gcd就会发生变化，此时，A和B都要除以T，而新的gcd变成原来gcd的T倍。这样又变成了最开始的状态，循环几次即可求出答案。</p>
+        <h2 id="Django诞生根本原因"><a href="#Django诞生根本原因" class="headerlink" title="Django诞生根本原因"></a>Django诞生根本原因</h2><p>构建一个节省开发时间的框架，将能复用的组件或模块放在一起，使开发者不必重复的工作。<a id="more"></a></p>
+<hr>
+<h2 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h2><p>1.完善的文档：官方有完善的文档，为开发者解决问题。<br>2.集成ORM组件：Django的Model层自带数据库ORM组件，为操作不同类型的数据库提供统一的方式。<br>3.URL映射技术：Django使用正则表达式管理URL映射，因此给开发者带来了极高的灵活性。<br>4.后台管理系统：开发者只需通过简单的几行配置和代码就可以实现完整的后台数据管理Web控制台。<br>5.错误信息提示：在开发调试过程中如果出现运行异常，Django 可以提供非常完整的错误信息帮助开发者定位问题。</p>
+<h2 id="Django-MTV和MVC的区别"><a href="#Django-MTV和MVC的区别" class="headerlink" title="Django MTV和MVC的区别"></a>Django MTV和MVC的区别</h2><h3 id="MVC设计模式"><a href="#MVC设计模式" class="headerlink" title="MVC设计模式"></a>MVC设计模式</h3><p>MVC是$Model-View-Controller $的缩写，其中每个单词都有其不同的含义：1.Model代表数据存储层，是对数据表的定义和数据的增删改查。<br>2.View代表视图层，是系统前端显示部分，它负责显示什么和如何进行显示。<br>3.Controller 代表控制层，负责根据从 View 层输入的指令来检索 Model 层的数据，并在该层编写代码产生结果并输出。</p>
+<p><strong>MVC设计模式的请求与响应过程：</strong></p>
+<p>①用户通过浏览器向服务器发起request请求，Controller层接受请求后，同时向Model和View发送指令。<br>②Model层根据指令与数据库交互并选择相应的业务数据，然后将数据发送给Controller层。<br>③View层接收到Controller的指令后，加载用户请求的页面，并将此页面发送给Cotroller层。<br>④Controller层接收到View和Model层的数据后，将它们组织响应格式发送给浏览器，浏览器通过解析后把页面展示出来。</p>
+<p>MVC的3层之间紧密相连，却又相互独立，每层的修改都不会影响其他层，每层都提供了各自独立的接口供其他层调用。MVC 的设计模式降低了代码之间的耦合性（即关联性），增加了模块的可重用性，这就是 MVC 的设计模式。</p>
+<h3 id="MTV设计模式"><a href="#MTV设计模式" class="headerlink" title="MTV设计模式"></a>MTV设计模式</h3><p>Django也将交互的过程分为了3个层次，也就是MTV设计模式：</p>
+<p>①Model：数据存储层，处理所有数据相关的业务，和数据库进行交互，并提供数据的增删改查。<br>②Template：模板层（表现层）具体来处理页面的显示。<br>③View：业务逻辑层，处理具体的业务逻辑，作用是连通Model和Template层</p>
 
       
 
@@ -215,6 +222,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -265,7 +283,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://tourhua.github.io/2020/11/18/%E6%95%B0%E8%AE%BA%E9%A2%98%E8%A7%A3/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://tourhua.github.io/2020/11/18/Django%E5%AD%A6%E4%B9%A0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -279,18 +297,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/11/18/python%E5%AD%A6%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          python学习
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/11/18/first-blog/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">first blog</div>
+    <a href="/2020/11/18/python%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python学习</div>
       <i class="icon-circle-right"></i>
     </a>
   

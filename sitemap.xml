@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://tourhua.github.io/2020/11/18/python%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2020-11-18</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://tourhua.github.io/2020/11/18/Django%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2020-11-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://tourhua.github.io/2020/11/18/%E6%95%B0%E8%AE%BA%E9%A2%98%E8%A7%A3/</loc>
     
     <lastmod>2020-11-18</lastmod>
@@ -30,6 +44,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>https://tourhua.github.io/tags/python/</loc>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 
   
