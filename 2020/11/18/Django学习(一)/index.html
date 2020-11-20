@@ -8,18 +8,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://tourhua.github.io">
-  <title>python学习 | tourhua的博客</title>
+  <title>Django学习(一) | tourhua的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="import语句基本的import语句（不带from子句）分两步执行：1.查找一个模块，若有必要会加载并初始化模块。2.在局部命名空间中为 import语句发生位置所处的作用域定义一个或多个名称。">
+  <meta name="description" content="Django诞生根本原因构建一个节省开发时间的框架，将能复用的组件或模块放在一起，使开发者不必重复的工作。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python学习">
-<meta property="og:url" content="https://tourhua.github.io/2020/11/18/python%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:title" content="Django学习(一)">
+<meta property="og:url" content="https://tourhua.github.io/2020/11/18/Django%E5%AD%A6%E4%B9%A0(%E4%B8%80)/index.html">
 <meta property="og:site_name" content="tourhua的博客">
-<meta property="og:description" content="import语句基本的import语句（不带from子句）分两步执行：1.查找一个模块，若有必要会加载并初始化模块。2.在局部命名空间中为 import语句发生位置所处的作用域定义一个或多个名称。">
+<meta property="og:description" content="Django诞生根本原因构建一个节省开发时间的框架，将能复用的组件或模块放在一起，使开发者不必重复的工作。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-11-18T13:46:24.000Z">
-<meta property="article:modified_time" content="2020-11-18T14:34:20.958Z">
+<meta property="article:published_time" content="2020-11-18T14:07:27.000Z">
+<meta property="article:modified_time" content="2020-11-20T03:21:31.266Z">
 <meta property="article:author" content="tourhua">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="Django">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="tourhua的博客" type="application/atom+xml">
@@ -156,14 +158,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-python学习" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Django学习(一)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      python学习
+      Django学习(一)
     </h1>
   
 
@@ -175,21 +177,28 @@
 	</span>
 
 
-<a href="/2020/11/18/python%E5%AD%A6%E4%B9%A0/" class="archive-article-date">
-  	<time datetime="2020-11-18T13:46:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-18</time>
+<a href="/2020/11/18/Django%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" class="archive-article-date">
+  	<time datetime="2020-11-18T14:07:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="import语句"><a href="#import语句" class="headerlink" title="import语句"></a>import语句</h1><p>基本的import语句（不带from子句）分两步执行：<br>1.查找一个模块，若有必要会加载并初始化模块。<br>2.在局部命名空间中为 import语句发生位置所处的作用域定义一个或多个名称。</p>
-<a id="more"></a>
-
-<p>当语句包含多个子句（由逗号分隔）时这两个步骤将对每个子句分别执行。</p>
-<p>当一个模块首次被导入时，Python 会搜索该模块，如果找到就创建一个 module 对象并初始化它。若未找到，则引发$ModuleNotFoundError$。</p>
-<h2 id="importlib"><a href="#importlib" class="headerlink" title="importlib"></a>importlib</h2><p>该模块提供了一个丰富的API用来与导入系统进行交互。</p>
-<h2 id="包"><a href="#包" class="headerlink" title="包"></a>包</h2><p>所有包都是模块，但并非所有模块都是包，也就是包是一种特殊的模块。<br>所有模块都有自己的名字。 子包名与其父包名以点号分隔。</p>
+        <h2 id="Django诞生根本原因"><a href="#Django诞生根本原因" class="headerlink" title="Django诞生根本原因"></a>Django诞生根本原因</h2><p>构建一个节省开发时间的框架，将能复用的组件或模块放在一起，使开发者不必重复的工作。<a id="more"></a></p>
+<hr>
+<h2 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h2><p>1.完善的文档：官方有完善的文档，为开发者解决问题。<br>2.集成ORM组件：Django的Model层自带数据库ORM组件，为操作不同类型的数据库提供统一的方式。<br>3.URL映射技术：Django使用正则表达式管理URL映射，因此给开发者带来了极高的灵活性。<br>4.后台管理系统：开发者只需通过简单的几行配置和代码就可以实现完整的后台数据管理Web控制台。<br>5.错误信息提示：在开发调试过程中如果出现运行异常，Django 可以提供非常完整的错误信息帮助开发者定位问题。</p>
+<h2 id="Django-MTV和MVC的区别"><a href="#Django-MTV和MVC的区别" class="headerlink" title="Django MTV和MVC的区别"></a>Django MTV和MVC的区别</h2><h3 id="MVC设计模式"><a href="#MVC设计模式" class="headerlink" title="MVC设计模式"></a>MVC设计模式</h3><p>MVC是$Model-View-Controller $的缩写，其中每个单词都有其不同的含义：1.Model代表数据存储层，是对数据表的定义和数据的增删改查。<br>2.View代表视图层，是系统前端显示部分，它负责显示什么和如何进行显示。<br>3.Controller 代表控制层，负责根据从 View 层输入的指令来检索 Model 层的数据，并在该层编写代码产生结果并输出。</p>
+<p><strong>MVC设计模式的请求与响应过程：</strong></p>
+<p>①用户通过浏览器向服务器发起request请求，Controller层接受请求后，同时向Model和View发送指令。<br>②Model层根据指令与数据库交互并选择相应的业务数据，然后将数据发送给Controller层。<br>③View层接收到Controller的指令后，加载用户请求的页面，并将此页面发送给Cotroller层。<br>④Controller层接收到View和Model层的数据后，将它们组织响应格式发送给浏览器，浏览器通过解析后把页面展示出来。</p>
+<p>MVC的3层之间紧密相连，却又相互独立，每层的修改都不会影响其他层，每层都提供了各自独立的接口供其他层调用。MVC 的设计模式降低了代码之间的耦合性（即关联性），增加了模块的可重用性，这就是 MVC 的设计模式。</p>
+<h3 id="MTV设计模式"><a href="#MTV设计模式" class="headerlink" title="MTV设计模式"></a>MTV设计模式</h3><p>Django也将交互的过程分为了3个层次，也就是MTV设计模式：</p>
+<p>①Model：数据存储层，处理所有数据相关的业务，和数据库进行交互，并提供数据的增删改查。<br>②Template：模板层（表现层）具体来处理页面的显示。<br>③View：业务逻辑层，处理具体的业务逻辑，作用是连通Model和Template层</p>
+<p>在MTV设计模式中，用View层取代了Controller层的位置，用Template层取代了原来View层的位置。</p>
+<p>我们可以简单理解Template是一个HTML页面，HTML页面的渲染在视图层完成。</p>
+<p><strong>MTV设计模式的请求与响应过程：</strong></p>
+<p>①用户通过浏览器对服务器发起 request 请求，服务器接收请求后，通过 View 的业务逻辑层进行分析，同时向 Model 层和 Template 层发送指令。<br>②Model层与数据库进行交互，将数据返回给View层。<br>③Template层接收到指令之后，调用相应的模板，并返回给View层。<br>④View层接收到模板与数据后，首先对模板进行渲染（将相应的数据赋值给模板），然后组织成相应格式返回给浏览器，浏览器进行解析后并最终呈现给用户。</p>
+<p>比较两种设计模式之后，其实MTV是MVC的一种细化，将原来 MVC 中的 View 层拿出来进行分离，视图的显示与如何显示交给 Template 层，而 View 层更专注于实现业务逻辑。不过Django也是有Controller层，不过由其框架本身实现，我们不用关心。</p>
 
       
 
@@ -219,6 +228,21 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Django</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -269,7 +293,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://tourhua.github.io/2020/11/18/python%E5%AD%A6%E4%B9%A0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://tourhua.github.io/2020/11/18/Django%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,18 +307,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/11/18/Django%E5%AD%A6%E4%B9%A0(%E4%B8%80)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Django学习(一)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/11/18/%E6%95%B0%E8%AE%BA%E9%A2%98%E8%A7%A3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">数论题解.md</div>
+    <a href="/2020/11/18/python%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python学习</div>
       <i class="icon-circle-right"></i>
     </a>
   
